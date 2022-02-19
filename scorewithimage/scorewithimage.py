@@ -1,6 +1,10 @@
 import os
 import pandas as pd
 from pandas.api.types import is_numeric_dtype, is_string_dtype
+from IPython.display import HTML
+
+def visualize(df: pd.DataFrame):
+    HTML(_visualize(df))
 
 def _visualize(df: pd.DataFrame):
     __check_columns_name(df)
@@ -8,7 +12,6 @@ def _visualize(df: pd.DataFrame):
     __check_files_exist(df)
 
     val_text = f'<div id="items-data">{df.to_json(orient="records")}</div>'
-    print(val_text)
     with open(os.path.join(os.path.dirname(__file__), "index.html")) as f:
         html = f.read()
         return f"{val_text}{html}"
