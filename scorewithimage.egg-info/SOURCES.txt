@@ -1,5 +1,7 @@
+MANIFEST.in
 setup.py
 scorewithimage/__init__.py
+scorewithimage/index.html
 scorewithimage/scorewithimage.py
 scorewithimage.egg-info/PKG-INFO
 scorewithimage.egg-info/SOURCES.txt
