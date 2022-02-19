@@ -1,4 +1,5 @@
 MANIFEST.in
+requirements.txt
 setup.py
 scorewithimage/__init__.py
 scorewithimage/index.html
@@ -6,4 +7,5 @@ scorewithimage/scorewithimage.py
 scorewithimage.egg-info/PKG-INFO
 scorewithimage.egg-info/SOURCES.txt
 scorewithimage.egg-info/dependency_links.txt
+scorewithimage.egg-info/requires.txt
 scorewithimage.egg-info/top_level.txt
