@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import ImageWithScore from '@/models/ImageWithScore';
+import { ImageWithScore } from '@/models/ImageWithScore';
 export default {
     props: {
         entity: {

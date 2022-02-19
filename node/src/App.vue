@@ -7,21 +7,26 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import axios from 'axios';
-import SScroller from './components/SScroller.vue';
+import Vue from "vue";
+import SScroller from "./components/SScroller.vue";
 
 export default Vue.extend({
-  name: 'App',
+  name: "App",
   components: {
-    SScroller
+    SScroller,
   },
-  mounted: async function() {
-    const { data } = await axios.get('./items.json');
-    this.items = data;
+  mounted: function () {
+    const itemsDom = document.getElementById('items-data');
+    if (itemsDom) {
+      console.log(itemsDom.innerText)
+      const items = JSON.parse(itemsDom.innerText);
+      this.items = items;
+      itemsDom.style.display = 'none';
+    }
   },
   data: () => ({
-    items: []
-  })
+    field: "",
+    items: [],
+  }),
 });
 </script>

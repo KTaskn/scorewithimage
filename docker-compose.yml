@@ -1,11 +1,15 @@
 version: '3'
 services:
   python:
-    image: python:3.9
+    build: python
+    ports:
+      - 8888:8888
+    volumes:
+      - ./python:/workspace
   node:
     build: node
     ports:
       - 8080:8080
-    volumes: 
+    volumes:
       - ./node:/workspace
       - /workspace/node_modules

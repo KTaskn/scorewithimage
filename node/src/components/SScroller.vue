@@ -12,12 +12,9 @@
 </template>
 
 <script>
-import { PropType } from 'vue';
 import SGrid from './atoms/SGrid.vue';
-import { ImageWithScore } from '@/models/ImageWithScore';
 
 const ITEM_HEIGHT = 200;
-const NUM_IMAGE = 100;
 const NUM_ROW = 10;
 
 export default {
