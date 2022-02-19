@@ -6,3 +6,5 @@ COPY ./package.json $WORKDIR
 
 WORKDIR $WORKDIR
 RUN npm install
+
+CMD npm run serve
