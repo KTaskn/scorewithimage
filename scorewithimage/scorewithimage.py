@@ -4,7 +4,7 @@ from pandas.api.types import is_numeric_dtype, is_string_dtype
 from IPython.display import HTML
 
 def visualize(df: pd.DataFrame):
-    HTML(_visualize(df))
+    return HTML(_visualize(df))
 
 def _visualize(df: pd.DataFrame):
     __check_columns_name(df)
